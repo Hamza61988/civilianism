@@ -1,0 +1,40 @@
+/* Mission.module.css */
+
+.mission-container {
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; /* Adjust the container width */
+    text-align: center; /* Center the text */
+  }
+  
+  .mission-container h5 {
+    color: yellow; /* Yellow color for the header */
+    font-size: 3.5rem; /* Larger font size for the header */
+    font-weight: bold; /* Make the header bold */
+    margin-bottom: 30px; /* Space below the header */
+    text-transform: uppercase; /* Optional: makes the header text uppercase */
+  }
+  /* Mission.module.css */
+
+
+  /* Classic Design with Light Background */
+.mission-container p {
+    font-size: 1.35rem;
+    line-height: 1.7;
+    color: #ffeeee;
+    text-align: left;
+    margin-bottom: 30px; /* Space between paragraphs */
+    padding: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #383838; /* Soft background color */
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+
+  .miss{
+   padding-top: 1px;
+  } 
+  

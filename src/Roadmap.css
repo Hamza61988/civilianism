@@ -1,0 +1,96 @@
+/* Ensure the content has padding and good spacing */
+.roadmap {
+    padding: 20px;
+    background-color: #121212; /* Black background for the roadmap */
+    color: #e0e0e0; /* Light text for readability */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    max-width: 800px;
+    margin: 100px auto; /* Increased margin-top to give more space above */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(120px); /* Start below the viewport */
+    transition: opacity 2s ease-out, transform 2s ease-out; /* Smooth transition for opacity and position */
+  }
+  
+  /* Fade-up animation */
+  .fade-up {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+  
+  /* Bounce animation */
+  .bounce {
+    animation: bounce 2s ease-out forwards;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+  
+  /* Slide-in from left animation */
+  .slide-in-left {
+    animation: slideInLeft 2s ease-out forwards;
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Scale-up animation */
+  .scale-up {
+    animation: scaleUp 2s ease-out forwards;
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .roadmap__title {
+    color: #4caf50; /* Green title */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .roadmap__phase {
+    margin-top: 30px;
+  }
+  
+  .roadmap__phase h3 {
+    color: yellow;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .roadmap__phase p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #bbb;
+    margin: 10px 0 20px;
+  }
+  
+  #road {
+    padding-top: 1px;
+  }

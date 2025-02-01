@@ -1,0 +1,79 @@
+/* General styling for the navbar */
+.navbar {
+  position: fixed; /* Fix navbar to the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensures navbar stays on top of other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: #070707; /* Dark background color */
+  color: white;
+  margin: 0; /* Remove any default margin */
+  border: none; /* Ensure no border is showing */
+  width: 100%; /* Make the navbar span across the full width of the page */
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+  top: 0;
+}
+
+/* Styling for the title */
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+ color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Styling for the navbar links */
+.navbar-links {
+  list-style-type: none;
+
+  display: flex;
+  gap: 20px;
+}
+
+/* Styling for each navbar item */
+.navbar-item {
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Style the anchor tags */
+.navbar-item a {
+  text-decoration: none; /* Remove default underline */
+  color: white; /* Default text color */
+  font-weight: 600;
+  padding: 8px 16px; /* Add padding to give some space around the text */
+  border-radius: 5px; /* Rounded corners for each link */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for navbar items */
+.navbar-item a:hover {
+  background-color: #ffcc00; /* Yellow background on hover */
+  color: black; /* Change text color to black on hover */
+}
+
+/* Active state for navbar items */
+.navbar-item a:active {
+  background-color: #ff9900; /* Darker yellow when clicked */
+  color: black; /* Text color remains black when active */
+}
+
+/* Add some spacing for the rest of the page so navbar doesn't overlap content */
+body {
+  margin-top: 80px; /* Adjust this based on the navbar's height */
+}
+
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}

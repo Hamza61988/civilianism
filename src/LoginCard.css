@@ -1,0 +1,107 @@
+/* Backdrop for the login card */
+.login-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(37, 37, 37, 0.7); /* Darker background for better focus */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+
+/* Login Card */
+.login-card {
+  background: #181818; /* Dark background for the card */
+  color: white;
+  width: 450px; /* Bigger and more visible */
+  height: 550px; /* Increased height for better spacing */
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.3); /* Subtle yellow glow */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Align items in center */
+}
+
+/* Close button */
+.btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  opacity: 0.7;
+  outline: none; /* Removes default focus outline */
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.btn-close:hover {
+  opacity: 1;
+  color: rgb(241, 241, 241);
+  background: black; /* Ensures black background on hover */
+}
+
+/* Remove focus outline completely */
+.btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Inputs */
+input {
+  background: #222;
+  color: white;
+  border: 1px solid #444;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Added spacing */
+  width: 100%;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+/* Buttons */
+.btn-yellow {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+.btn-yellow:hover {
+  background-color: #ffd700; /* Gold shade on hover */
+}
+
+/* Centering Sign Up Text */
+.signup-text {
+  margin-top: 15px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.signup-text a {
+  color: yellow;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
