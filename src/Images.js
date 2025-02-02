@@ -8,7 +8,7 @@ export function Images() {
     "/images/work2.png",
     "/images/work3.png",
     "/images/imagee.png",
-    "/images/imagee2.png",
+    "imagee2.png",
     
   ];
   
