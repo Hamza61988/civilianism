@@ -4,11 +4,14 @@ import './Images.css'; // or './Images.module.css' if using CSS modules
 export function Images() {
  
   const imageSources = [
-    "/images/work.png",  // Update the path to include /images/
+    "/images/work.png",  
     "/images/work2.png",
     "/images/work3.png",
     "/images/imagee.png",
-    "/images/imagee2.png"
+    "/images/imagee2.png",
+    "https://civilianismclub.com/static/media/Friedman.dd4b9273c10d1004e13d.webp",
+    'https://civilianismclub.com/static/media/Friedman.dd4b9273c10d1004e13d.webp',
+    "https://civilianismclub.com/static/media/Friedman.dd4b9273c10d1004e13d.webp"
   ];
   
 
