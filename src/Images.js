@@ -4,7 +4,7 @@ import './Images.css'; // or './Images.module.css' if using CSS modules
 export function Images() {
   // Define an array of image sources (add your own images here)
   const imageSources = [
-    "work.png", "imagee.png", "work2.png", "work3.png", "imagee2.png"  ];
+    "work2.png", "work2.png", "work2.png", "work2.png", "work2.png"  ];
 
   // State to hold the current images being displayed
   const [currentImages, setCurrentImages] = useState([]);
