@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/civilianism/static/css/main.bedcf941.css",
+    "main.js": "/civilianism/static/js/main.02589bd3.js",
+    "index.html": "/civilianism/index.html",
+    "main.bedcf941.css.map": "/civilianism/static/css/main.bedcf941.css.map",
+    "main.02589bd3.js.map": "/civilianism/static/js/main.02589bd3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bedcf941.css",
+    "static/js/main.02589bd3.js"
+  ]
+}
