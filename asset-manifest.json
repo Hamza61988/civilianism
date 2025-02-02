@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/civilianism/static/css/main.bedcf941.css",
-    "main.js": "/civilianism/static/js/main.3075b54e.js",
+    "main.js": "/civilianism/static/js/main.816dbf23.js",
     "index.html": "/civilianism/index.html",
     "main.bedcf941.css.map": "/civilianism/static/css/main.bedcf941.css.map",
-    "main.3075b54e.js.map": "/civilianism/static/js/main.3075b54e.js.map"
+    "main.816dbf23.js.map": "/civilianism/static/js/main.816dbf23.js.map"
   },
   "entrypoints": [
     "static/css/main.bedcf941.css",
-    "static/js/main.3075b54e.js"
+    "static/js/main.816dbf23.js"
   ]
 }
