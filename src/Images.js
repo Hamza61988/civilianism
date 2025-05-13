@@ -4,10 +4,9 @@ import './Images.css';
 export function Images() {
  
   const imageSources = [
-  '/images/imagee.png', '/images/imagee2.png' ,'/images/work.png' , '/images/work2.png' , '/images/work3.png'
-  ];
+  'https://i.postimg.cc/FRLfG6zm/imagee.png', 'https://i.postimg.cc/C54xQpgy/imagee2.png' ,'https://i.postimg.cc/J4Ph38xZ/work.png' , 'https://i.postimg.cc/3JKRDNX3/work2.png'
   
-
+  ]
   const [currentImages, setCurrentImages] = useState([]);
 
   const shuffleImages = () => {

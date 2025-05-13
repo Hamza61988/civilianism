@@ -45,7 +45,7 @@ const Team = () => {
       />
       <TeamMemberCard 
         name="PHARAOH" 
-        image="/images/work3.png"
+        image="https://i.postimg.cc/dQR31rTW/work3.png"
         bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
         isLeft={true}
       />
