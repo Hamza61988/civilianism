@@ -1,28 +1,22 @@
-/* Main.css */
-
-/* Container to center both the image and the text */
 .wrapper {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically */
-    height: 100vh;           /* Full viewport height */
-    margin: 0;               /* Remove any default margin */
-    flex-direction: column;  /* Stack the image and title vertically */
-    text-align: center;      /* Center the text horizontally */
-  }
-  
-  /* Style for the image */
-  .centered-image {
-    max-width: 80%;  /* Limit the image width to 80% of its original size */
-    height: auto;    /* Maintain the image's aspect ratio */
-    margin-bottom: 6px; /* Small space between the image and the title */
-  }
-  
-  /* Style for the title (h5) */
-  .title {
-    font-size: 6.5rem;     /* Make the text large */
-    font-weight: bold;     /* Make the text bold */
-    color: #ffffff;           /* Set the text color */
-    margin: 0;             /* Remove any default margin around the title */
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  text-align: center;
+}
+
+.centered-image {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-size: 6.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}

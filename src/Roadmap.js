@@ -6,24 +6,22 @@ export function Roadmap() {
   
 
   useEffect(() => {
-    // Create an IntersectionObserver instance
+ 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // If the element is about to enter the viewport, add the fade-up class
+       
           entry.target.classList.add('fade-up');
         }
       },
       {
-        threshold: 0.1, // Trigger when 10% of the element is visible
+        threshold: 0.1,
       }
     );
 
-    // Observe the element
     const roadmapElement = document.querySelector('.roadmap');
     if (roadmapElement) observer.observe(roadmapElement);
 
-    // Clean up the observer when component unmounts
     return () => {
       if (roadmapElement) observer.unobserve(roadmapElement);
     };

@@ -1,89 +1,86 @@
-/* Team container and heading */
 .team-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Change this to start so it doesn't push it down */
+  justify-content: flex-start;
   padding: 40px;
   max-width: 1200px;
-  margin: 0 auto; /* Automatically center horizontally */
-  height: auto; /* Allow the content to determine the height */
+  margin: 0 auto;
+  height: auto;
   box-sizing: border-box;
 }
 
 .team-heading {
   text-align: center;
-  font-size: 60px; /* Larger heading */
+  font-size: 60px;
   font-weight: bold;
   margin-bottom: 50px;
-  color: white; /* White color for the heading */
+  color: white;
 }
 
-/* Card layout for each team member */
 .team-member {
   display: flex;
   align-items: center;
-  margin-bottom: 60px; /* More space between cards */
+  margin-bottom: 60px;
   padding: 20px;
   width: 100%;
-  max-width: 900px; /* Limit the width of each team card */
+  max-width: 900px;
 }
 
 .team-member img.profile-img {
-  width: 250px; /* Larger image */
-  height: 250px; /* Larger image */
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 30px;
 }
 
 .team-member.left img.profile-img {
-  margin-right: 50px; /* More space for left-aligned images */
+  margin-right: 50px;
 }
 
 .team-member.right img.profile-img {
-  margin-left: 50px; /* More space for right-aligned images */
+  margin-left: 50px;
 }
 
 .bio-content {
-  max-width: 700px; /* Increase width of bio */
+  max-width: 700px;
   text-align: left;
 }
 
 .name {
-  font-size: 36px; /* Larger name font */
+  font-size: 36px;
   font-weight: bold;
   color: #e0d7d7;
   margin-bottom: 15px;
 }
 
 .bio {
-  font-size: 18px; /* Larger bio text */
+  font-size: 18px;
   color: #e9e4e4;
   line-height: 1.8;
 }
 
 .team-member.left .bio-content {
-  margin-left: 40px; /* Adjust bio content position for left-aligned image */
+  margin-left: 40px;
 }
 
 .team-member.right .bio-content {
-  margin-right: 40px; /* Adjust bio content position for right-aligned image */
+  margin-right: 40px;
 }
 
 .team-member img {
-  width: 250px; /* Larger image */
-  height: 250px; /* Larger image */
+  width: 250px;
+  height: 250px;
 }
 
-/* Centering the content vertically in the viewport */
 body, html {
   height: 100%;
   margin: 0;
   display: flex;
-  align-items: flex-start; /* Align content from the top, not center */
-  justify-content: center; /* Center horizontally */
-  background-color: #111; /* Dark background for better contrast */
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #111;
   font-family: 'Arial', sans-serif;
 }
 

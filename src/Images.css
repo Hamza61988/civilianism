@@ -1,58 +1,53 @@
-/* Images.css or Images.module.css */
 .images-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Space between images */
-    width: 700px; /* Container width */
-    height: 450px; /* Container height */
-    margin: 0 auto; /* Center container horizontally */
-    position: relative;
-    margin-bottom: 50px; /* Fixed space below the images */
-  }
-  
-  .images-container img {
-    width: 450px; /* Image width */
-    height: 450px; /* Image height */
-    object-fit: cover; /* Ensure images maintain aspect ratio */
-    border-radius: 15px; /* Optional: rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 700px;
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.images-container img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 15px;
+  opacity: 1;
+  position: absolute;
+  animation: shuffle 6s infinite;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+@keyframes shuffle {
+  0% {
     opacity: 1;
-    position: absolute; /* Positioning images over each other */
-    animation: shuffle 6s infinite; /* Slower animation */
-    /* We will add transition for smooth shuffle effect */
-    transition: transform 1s ease, opacity 1s ease; /* Smooth transition */
+    transform: translateX(0);
   }
-  
-  /* Keyframes for the shuffle effect */
-  @keyframes shuffle {
-    0% {
-      opacity: 1;
-      transform: translateX(0); /* Start at normal position */
-    }
-    33% {
-      opacity: 1;
-      transform: translateX(-300px); /* Left image moves left */
-    }
-    66% {
-      opacity: 1;
-      transform: translateX(300px); /* Right image moves right */
-    }
-    100% {
-      opacity: 0;
-      transform: translateY(200px); /* Middle image moves down */
-    }
+  33% {
+    opacity: 1;
+    transform: translateX(-300px);
   }
-  
-  /* Animation delays for the images */
-  .images-container img.first {
-    animation-delay: 0s; /* Left image */
+  66% {
+    opacity: 1;
+    transform: translateX(300px);
   }
-  
-  .images-container img.middle {
-    animation-delay: 2s; /* Middle image */
+  100% {
+    opacity: 0;
+    transform: translateY(200px);
   }
-  
-  .images-container img.third {
-    animation-delay: 4s; /* Right image */
-  }
-  
+}
+
+.images-container img.first {
+  animation-delay: 0s;
+}
+
+.images-container img.middle {
+  animation-delay: 2s;
+}
+
+.images-container img.third {
+  animation-delay: 4s;
+}

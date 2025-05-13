@@ -1,7 +1,6 @@
 import React from 'react';
 import './Team.css';
 
-// Card Component
 const TeamMemberCard = ({ name, image, bio, isLeft }) => {
   return (
     <div className={`team-member ${isLeft ? 'left' : 'right'}`}>
@@ -15,7 +14,6 @@ const TeamMemberCard = ({ name, image, bio, isLeft }) => {
   );
 };
 
-// Team Component
 const Team = () => {
   return (
     <div id="team" >
@@ -47,7 +45,7 @@ const Team = () => {
       />
       <TeamMemberCard 
         name="PHARAOH" 
-        image="work3.png"
+        image="/images/work3.png"
         bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
         isLeft={true}
       />

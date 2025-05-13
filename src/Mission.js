@@ -1,6 +1,5 @@
 import React from 'react';
-import './Mission.css'; // Import the Mission CSS
-
+import './Mission.css';
 export function Mission() {
   return (
     <div className="miss" id="mission">

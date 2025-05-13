@@ -13,10 +13,10 @@ const App = () => {
 
   return (
     <div id="civil" className="App">
-      {/* Show Login Card */}
+    
       {showLogin && <LoginCard onClose={() => setShowLogin(false)} />}
 
-      {/* Main Content */}
+  
       <div  className="content" data-aos="fade-left" data-aos-duration="1000">
        
         <h1>What is it?</h1>
