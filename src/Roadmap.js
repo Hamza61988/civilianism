@@ -1,34 +1,31 @@
-import React, { useEffect } from 'react';
+import React, { useRef ,  useEffect } from 'react';
 import './Roadmap.css'; // Import your CSS file
+import gsap from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export function Roadmap() {
 
   
-
-  useEffect(() => {
- 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-       
-          entry.target.classList.add('fade-up');
-        }
-      },
-      {
-        threshold: 0.1,
+  
+let haha = useRef(null)
+  useEffect(()=>{
+    gsap.fromTo(haha.current , {
+      y: 200,
+      
+    },{
+      y: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: haha.current,
+        toggleActions: "play none none reverse",
       }
-    );
-
-    const roadmapElement = document.querySelector('.roadmap');
-    if (roadmapElement) observer.observe(roadmapElement);
-
-    return () => {
-      if (roadmapElement) observer.unobserve(roadmapElement);
-    };
-  }, []);
+     
+    })
+  }, [])
 
   return (
-    <div id="road" >
+    <div ref={haha} >
     <div  className="roadmap">
       <h5 className="roadmap__title">Phase 1.0: Building the Starship</h5>
 
